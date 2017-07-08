@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/course_imv"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/background"/>
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/course_imv"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:text="第一个推荐课程"/>
+</RelativeLayout>

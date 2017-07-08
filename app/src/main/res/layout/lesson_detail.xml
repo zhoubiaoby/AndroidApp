@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <TextView
+            android:id="@+id/courseDetailTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/b3"
+            android:text="课程详情"
+            android:textColor="#FFF"
+            android:textSize="22.0sp"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:gravity="center"
+            android:layout_alignParentTop="true"/>
+
+			<RelativeLayout
+        		android:id="@+id/relativeLayout_title"
+        		android:layout_width="match_parent"
+        		android:layout_height="150dp"
+                android:layout_below="@+id/courseDetailTitle"
+        		android:background="@drawable/lession_bg"
+        		 >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/lesson_image"
+            android:layout_width="120dip"
+            android:layout_height="110dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/course_default"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/lesson_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lesson_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/lesson_image"
+            android:text="课程名"
+            android:textSize="18sp"
+            android:textColor="#2290d2"
+            android:maxLines="2"/>
+        <TextView
+            android:id="@+id/teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lesson_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/lesson_image"
+            android:text="教师"
+            android:textSize="18sp"
+            android:textColor="#2290d2"/>
+        <ImageView
+            android:id="@+id/lesson_play"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lesson_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/play_icon" />
+
+
+        </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/relativeLayout_title"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/course_intro"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/forestgreen"
+            android:text="课程简介"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/teacher_intro"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/lawngreen"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="教师介绍"/>
+        <TextView
+            android:id="@+id/course_recommend"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/lawngreen"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="评论"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/course_detail_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout_bottom"
+        android:layout_below="@+id/toolbar"/>
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/share"
+            android:background="@drawable/b4"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img_download"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/download_icon"
+            android:background="@drawable/b4"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</RelativeLayout>

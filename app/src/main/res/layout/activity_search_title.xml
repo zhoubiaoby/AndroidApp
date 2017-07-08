@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/search_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="17dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="17dp"
+        android:src="@drawable/blue_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toLeftOf="@+id/search_ok"
+        android:layout_toRightOf="@+id/search_back"
+        android:background="@drawable/search_bg"
+        android:layout_alignBottom="@+id/search_back">
+
+        <!--<EditText-->
+            <!--android:id="@+id/common_title_searchEdt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:hint="@string/hint_title_search"-->
+            <!--android:imeOptions="actionSearch"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/hint_text_search_color"-->
+            <!--android:textSize="14sp" />-->
+        <!--android:textColorHint="@color/hint_text_search_color"-->
+        <!--android:textCursorDrawable="@drawable/bg_search_cursor"-->
+
+
+        <EditText
+            android:id="@+id/common_title_searchEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/search_clear"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/search_bg"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:hint="请输入搜索课程名"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/theme_window_background"
+            android:textColorHint="@color/hint_text_search_color"
+            android:textCursorDrawable="@drawable/bg_search_cursor"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/search_words_clear"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/search_ok"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/search_back"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/search_back"
+        android:paddingLeft="15dp"
+        android:paddingRight="0dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/search_icon1" />
+</RelativeLayout>

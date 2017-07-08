@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/control_back"
+    
+    >
+<!-- 			xmlns:admobsdk="http://schemas.android.com/apk/res/com.zh_weir.videoplayer" -->
+
+    
+    <TextView
+    	android:id="@+id/lessonTitle"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+    	android:text="课程标题"
+    	android:textSize="16sp"
+    	android:textColor="#FFF"
+    	android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+    />
+    
+<!--   去掉广告
+  <LinearLayout  
+    	android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+    >  
+	    <com.admob.android.ads.AdView     
+	        android:id="@+id/ad" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        admobsdk:backgroundColor="#00000000"
+	        admobsdk:textColor="#00FFFF"  
+	        admobsdk:testing="false"
+	  	/>
+    </LinearLayout>    -->
+
+<!--     <ImageButton
+        android:id="@+id/back"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:src="@drawable/back" /> -->
+    
+</RelativeLayout>

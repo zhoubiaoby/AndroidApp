@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CXCourses</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="generic_error">generic_error</string>
+    <string name="generic_server_down">generic_server_down:服务器请求超时</string>
+</resources>
